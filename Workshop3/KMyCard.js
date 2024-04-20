@@ -21,12 +21,17 @@ export const KMyCard = () => {
 }
 
 const styles= StyleSheet.create({
+    container: {
+
+        height: "30%",
+        width: "20"
+    },
     upperContainer: {
         flex: 1/3,
         backgroundColor: '#121120', //131313
         alignItems: 'center',
-        borderTopStartRadius: 25,
-        borderTopEndRadius: 25
+        borderTopStartRadius: 15,
+        borderTopEndRadius: 15
     },
     miniContainer: {
         marginTop: "10%",
@@ -43,11 +48,12 @@ const styles= StyleSheet.create({
         width: "35%",
         height: "35%",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+
     },
     imageContainer: {
-        height: "120%",
-        width: "90%",
+        height: "130%",
+        width: "85%",
         alignItems: 'center',
         paddingTop: "30%",
         borderTopStartRadius: 25,
@@ -55,17 +61,18 @@ const styles= StyleSheet.create({
     },
 
     lowerContainer: {
+
         flex: 1/3,
-        borderBottomEndRadius: 25,
-        borderBottomStartRadius: 25,
+        borderBottomEndRadius: 15,
+        borderBottomStartRadius: 15,
         backgroundColor: '#efefef',
-        justifyContent: 'center',
+        justifyContent: 'space-evenly',
         alignItems: 'center'
 
     },
 
     title: {
-        fontSize: 20,
+        fontSize: 10,
         alignItems: 'center',
         justifyContent: 'center',
         textAlign: 'center'

@@ -1,6 +1,7 @@
 import {Button, Image, StyleSheet, Text, View} from 'react-native';
 import {KMyCard} from "./KMyCard";
-import {KButton} from './KButton'
+import {KButton} from './KButton';
+import {KWeatherCard} from './KWeatherCard';
 import * as Haptics from 'expo-haptics';
 import Checkbox from 'expo-checkbox';
 import {useState} from "react";
@@ -10,22 +11,25 @@ export default function App() {
     return (
         <View style = {styles.container}>
             <KMyCard/>
-            <Button
+            <KWeatherCard/>
+{/*            <Button
+                color ="#c19971"
                 title="Bubuie telefonul"
                 onPress={()=>
                       Haptics.notificationAsync(
                           Haptics.NotificationFeedbackType.Success
                       )
                 }
+
             />
             <Checkbox
                 style={styles.checkbox}
                 value={isChecked}
                 onValueChange={setChecked}
                 color={isChecked ? '#8ED2F0' : undefined}
-            />
+            />*/}
 
-            <KButton/>
+           {/* <KButton onPress={() => alert("ce faaa ma")}/>*/}
       </View>
     );
 }
@@ -33,10 +37,11 @@ export default function App() {
 const styles= StyleSheet.create({
 
     container: {
-        flex: 1, // takes all the available screen space
-        backgroundColor: '#fff',
-        alignItems: 'center', // align horizontally
-        justifyContent: 'center', // align vertically
-    },
+        flex: 1,
+        backgroundColor: '#E6e6e6',
+        alignItems: 'center',
+        justifyContent: 'space-evenly',
+
+    }
 
 });
